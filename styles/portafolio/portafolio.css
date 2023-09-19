@@ -1,0 +1,56 @@
+/* PORFOLIO */
+
+.portafolio {
+  background-color: var(--background-color);
+  padding: 180px 0 100px 0;
+
+  z-index: 100;
+}
+
+.portafolio .titulo-seccion {
+  font-size: 6.5rem;
+  width: fit-content;
+  -webkit-text-stroke: 2px #ffffff;
+  position: relative;
+  transform: translateX(100px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  letter-spacing: 40px;
+  color: rgba(6, 2, 46, 0.925);
+}
+.portafolio .fila {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.portafolio .fila .col {
+  position: relative;
+  height: fit-content;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.portafolio .fila .col .info {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  width: 100%;
+  transition: left 0.8s;
+}
+.portafolio .fila .col .info .titulo-proyecto {
+  font-size: 40px;
+}
+.portafolio .fila .col .info .descripcion-proyecto {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.portafolio .fila .col .img-proyecto {
+  width: 100%;
+}
+.portafolio .fila .col:hover {
+  transform: rotateX(10deg) rotateY(15deg) rotateZ(1deg);
+}
+.portafolio .fila .col:hover .info {
+  left: 0;
+}
